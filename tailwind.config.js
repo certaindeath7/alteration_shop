@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'media',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -23,6 +24,16 @@ module.exports = {
           100: 'rgba(59,60,152,0.02)',
         },
         grey: '#747A88',
+        transparent: 'transparent',
+        current: 'currentColor',
+        white: '#ffffff',
+        purple: '#3f3cbb',
+        midnight: '#121063',
+        metal: '#565584',
+        tahiti: '#3ab7bf',
+        silver: '#ecebff',
+        'bubble-gum': '#ff77e9',
+        bermuda: '#78dcca',
       },
       backgroundImage: {
         pattern: "url('/pattern.png')",

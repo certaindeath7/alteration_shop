@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Dialog } from '@headlessui/react';
+import DarkMode from './DarkMode';
 import Link from 'next/link';
 
 const navigation = [
@@ -48,8 +49,8 @@ const NavBar: React.FC = () => {
             {item.name}
           </Link>
         ))}
+        <DarkMode />
       </div>
-
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
